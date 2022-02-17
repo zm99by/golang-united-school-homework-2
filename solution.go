@@ -12,9 +12,6 @@ import (
 // CalcSquare(10.0, SidesSquare)
 // CalcSquare(10.0, SidesCircle)
 
-func CalcSquare(sideLen float64, sidesNum #yourTypeNameHere#) float64 {
-}
-
 type vs int
 
 func CalcSquare(sideLen float64, sidesNum vs) (res float64) {
@@ -25,14 +22,14 @@ func CalcSquare(sideLen float64, sidesNum vs) (res float64) {
 
 	switch sidesNum {
 	case SidesCircle:
-		res = math.Pi * math.Pow(sideLen 2.0)
+		res = math.Pi * math.Pow(sideLen, 2.0)
 	case SidesTriangle:
-		res = (math.Pow(sideLen 2.0) * math.Sqrt(3.0)) / 4
+		res = (math.Pow(sideLen, 2.0) * math.Sqrt(3.0)) / 4
 	case SidesSquare:
-		res = math.Pow(sideLen 2.0)
+		res = math.Pow(sideLen, 2.0)
 	default:
-		res = sidesNum 
+		res = 0
 	}
 
-	return rez
+	return
 }
