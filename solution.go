@@ -14,11 +14,11 @@ import (
 
 type vs int
 
-func CalcSquare(sideLen float64, sidesNum vs) (res float64) {
+const SidesTriangle vs = 3
+const SidesSquare vs = 4
+const SidesCircle vs = 0
 
-	const SidesTriangle vs = 3
-	const SidesSquare vs = 4
-	const SidesCircle vs = 0
+func CalcSquare(sideLen float64, sidesNum vs) (res float64) {
 
 	switch sidesNum {
 	case SidesCircle:
